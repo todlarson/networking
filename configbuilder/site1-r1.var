@@ -1,0 +1,5 @@
+hostname: site1-r1
+loopback0: 1.1.1.1/32
+
+include: site1-shared.h
+include: global-shared.h
