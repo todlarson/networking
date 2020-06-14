@@ -1,7 +1,5 @@
 from random import randrange
-from jinja2 import template
-
-NumberPOEperAZ=randrange(3,20)
+NumberPOEperAZ=randrange(3,10)
 for az in ['dca50','dca51','dca54','apa60','apa61','apa62','lck50','lck51','lck52']:
     switchnum = 100
     maxswitch = switchnum + NumberPOEperAZ
