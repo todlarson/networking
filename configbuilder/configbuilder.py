@@ -1,5 +1,4 @@
-ingest variables
-render template
+needs lots of worl
 
 ingest variables from index.html
 ingest template from index.html
