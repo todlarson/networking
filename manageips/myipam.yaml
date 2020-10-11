@@ -1,0 +1,30 @@
+aggregate_global:
+  desc: "Global Aggregates"
+  type: aggregate
+  address:
+  - 10.0.0.0/8
+  - 192.168.0.0/16
+aggregate_loopbacks:
+  desc: "Loopback Aggregates"
+  type: aggregate
+  address:
+  - 192.168.0.0/24
+allocated_loopbacks:
+  address:
+  - 192.168.0.1/32
+  - 192.168.0.255/32
+aggregate_p2p:
+  desc: "Point-to-Point Aggregates"
+  type: aggregate
+  address:
+  - 192.168.0.0/23
+aggregate_vlans:
+  desc: "Vlan Aggregates"
+  type: aggregate
+  address:
+  - 10.0.0.0/16
+vlan:
+  type: vlan 
+  10.0.0.0/24:
+    - id: data
+    - status: allocated
