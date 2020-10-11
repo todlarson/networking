@@ -51,6 +51,11 @@ def write_to_file(myipam, filename):
     with open(filename, 'w') as file:
         documents = yaml.dump(myipam, file)   
 
+def print_netmask_gw(myipam):
+    agg = ipaddress.ip_network(myipam['console']['aggregate']['dc']['network'])
+    print("mask: ", agg.netmask)
+    print("gateway: ", list(agg)[1])
+
 #Process args
 input_error_msg = "Error -  usage: manageips.py --[add|delete|get|list] [--hostname <hostname>]"
 if len(sys.argv) == 2 and sys.argv[1] == "--list":
@@ -80,14 +85,18 @@ if action == '--add':
    add_address_to_host(myipam, newhost, str(new_address))
    write_to_file(myipam, filename)
    get_host_address(myipam, newhost)
+   print_netmask_gw(myipam)
 elif action == '--delete':
    delete_host(myipam, newhost)
    write_to_file(myipam, filename)
    print(newhost, "deleted.")
+   print_netmask_gw(myipam)
 elif action == '--get':
    get_host_address(myipam, newhost)
+   print_netmask_gw(myipam)
 elif action == '--list':
    get_host_address_all(myipam)
+   print_netmask_gw(myipam)
 else:
     print(input_error_msg)
     exit()

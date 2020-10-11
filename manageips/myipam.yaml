@@ -16,13 +16,19 @@ console:
       loopback0: 172.16.0.3
     r2:
       loopback0: 172.16.0.7
+    r3:
+      loopback0: 172.16.0.9
+    r4:
+      loopback0: 172.16.0.8
     r5:
       loopback0: 172.16.0.4
     r6:
       loopback0: 172.16.0.4
     r7:
       loopback0: 172.16.0.4
-    r8:
-      loopback0: 172.16.0.0
     r9:
+      loopback0: 172.16.0.1
+    reserved0:
+      loopback0: 172.16.0.0
+    reserved1:
       loopback0: 172.16.0.1
