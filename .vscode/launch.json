@@ -28,7 +28,7 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/manageips/manageips.py",
-            "args" : ["--list"]
+            "args" : ["--get", "--hostname", "r1"]
         },
        
     ]
