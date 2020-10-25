@@ -49,7 +49,7 @@ def get_host_address_all(myipam):
 
 def write_to_file(myipam, filename):
     with open(filename, 'w') as file:
-        documents = yaml.dump(myipam, file)   
+        yaml.dump(myipam, file)   
 
 def print_netmask_gw(myipam):
     agg = ipaddress.ip_network(myipam['console']['aggregate']['dc']['network'])
