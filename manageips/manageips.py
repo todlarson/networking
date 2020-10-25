@@ -72,7 +72,7 @@ else:
 
 # Save the entire file into a dictionary
 myipam = []
-filename = "./myipam.yaml"
+filename = "/Users/larson/code/networking/manageips/myipam.yaml"
 with open(filename, "r") as file:
     # The FullLoader parameter handles the conversion from YAML
     # scalar values to Python the dictionary format
