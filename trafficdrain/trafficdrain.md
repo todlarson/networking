@@ -10,6 +10,7 @@ The routers are ospf and bgp adjacent.
 We are tasked to drain traffic from R1 so we can perform a Junos update and reboot without impacting the users.
 This lab does not have data plane traffic flowing through it so we use control plane details to verify the configuration.
 
+### Versions
 Both routers are Juniper vmx devices run in Juniper vLabs https://cloudlabs.juniper.net.
 ```
 jcluser@R1> show version 
@@ -17,30 +18,32 @@ Hostname: R1
 Model: vmx
 Junos: 18.3R1.9
 ```
-
+### Topology
+```
+                    ospf
+R1 ge-0/0/0 <-----------------> ge-0/0/0 R2
+                    bgp
+```
 ## Expectations
 In the NORMAL or non-DRAINED state, we expect the following:
-- R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
-- R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 1.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
 
 In the DRAINED state, we expect the following:
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 65535.
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11 11 11 11 11.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 65535.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of "11 11 11 11 11".
 
 Finally, back in the NORMAL or non-DRAINED state, we expect the following:
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
-
-## Design,
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 1.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
+## Design
 This design address ospf and bgp in different ways.
-First, the design uses apply-groups to insert `overaload` into the ospf configuration.
+First, the design uses apply-groups to insert `overload` into the ospf configuration.
 Next, the design uses apply-groups to insert an as-path-prepend configration into all terms of the bgp export policy.
 
 A downside of this design is it depends on the export policy to be configured with terms.
 Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
-
 ## Demo
-
 ### Normal conditions on R2
 ```
 jcluser@R2> show ospf database router detail advertising-router 10.1.1.1    
