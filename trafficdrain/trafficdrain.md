@@ -20,9 +20,10 @@ Junos: 18.3R1.9
 ```
 ### Topology
 ```
-                    ospf
-R1 ge-0/0/0 <-----------------> ge-0/0/0 R2
-                    bgp
+Router-id                      ospf                        Router-id
+10.1.1.1     R1 ge-0/0/0 <-----------------> ge-0/0/0 R2   10.1.2.1
+                               bgp
+
 ```
 ## Expectations
 In the NORMAL or non-DRAINED state, we expect the following:
@@ -41,8 +42,7 @@ This design address ospf and bgp in different ways.
 First, the design uses apply-groups to insert `overload` into the ospf configuration.
 Next, the design uses apply-groups to insert an as-path-prepend configration into all terms of the bgp export policy.
 
-A downside of this design is it depends on the export policy to be configured with terms.
-Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
+A downside of this design is it depends on the export policy to be configured with terms. Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
 ## Demo
 ### Normal conditions on R2
 ```
@@ -113,11 +113,6 @@ inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
   Prefix  Nexthop       MED     Lclpref    AS path
   10.1.1.0/24             172.16.1.1       11 11 11 11 11 I  <--- Five Entries
   10.1.99.0/24            172.16.1.1       11 11 11 11 11 I
-
-inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
-
-jcluser@R2> 
-
 ```
 
 ### Put draffic back onto R1
