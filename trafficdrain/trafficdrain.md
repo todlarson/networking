@@ -43,6 +43,25 @@ This design address ospf and bgp in different ways.
 First, the design uses apply-groups to insert `overload` into the ospf configuration.
 Next, the design uses apply-groups to insert an as-path-prepend configration into all terms of the bgp export policy.
 
+### Group configuration
+```
+jcluser@R1> show configuration groups 
+maint {
+    protocols {
+        ospf {
+            overload;
+        }
+    }
+    policy-options {
+        policy-statement send-loopbacks {
+            term <*> {
+                then as-path-prepend "11 11 11 11";
+            }
+        }
+    }
+}
+```
+
 A downside of this design is it depends on the export policy to be configured with terms. Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
 ## Demo
 ### Normal conditions on R2
