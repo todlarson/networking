@@ -22,7 +22,7 @@ Junos: 18.3R1.9
 ```
 Router-id                            ospf                        Router-id
 10.1.1.1           R1 ge-0/0/0 <-----------------> ge-0/0/0 R2   10.1.2.1
-Advertixed Subnets                   bgp
+Advertised Subnets                   bgp
 10.1.1.0/24
 10.1.99.0/24
 ```
