@@ -1,9 +1,9 @@
-###Goal
+#Goal
 
 Create a one line configuration command that drains traffic from a juniper device. 
 Then, use the "delete" form of that same command to put traffic back onto the device.
 
-###Conditions
+##Conditions
 A lab with 2 directly connected routers, R1 and R2.
 The routers are ospf and bgp adjacent.
 
@@ -18,7 +18,7 @@ Model: vmx
 Junos: 18.3R1.9
 ```
 
-###Expectations
+##Expectations
 In the NORMAL or non-DRAINED state, we expect the following:
 R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
 R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
@@ -31,7 +31,7 @@ Finally, back in the NORMAL or non-DRAINED state, we expect the following:
 R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
 R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
 
-###Design,
+##Design,
 This design address ospf and bgp in different ways.
 First, the design uses apply-groups to insert `overaload` into the ospf configuration.
 Next, the design uses apply-groups to insert an as-path-prepend configration into all terms of the bgp export policy.
@@ -39,9 +39,9 @@ Next, the design uses apply-groups to insert an as-path-prepend configration int
 A downside of this design is it depends on the export policy to be configured with terms.
 Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
 
-###Demo
+##Demo
 
-####Normal conditions on R2
+###Normal conditions on R2
 ```
 jcluser@R2> show ospf database router detail advertising-router 10.1.1.1    
 
@@ -75,14 +75,14 @@ inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 jcluser@R2> 
 ```
 
-#### Drain draffic from R1
+### Drain draffic from R1
 ```
 configure exclusive
 set apply-group maint
 commit and-quit
 ```
 
-####Updated conditions on R2
+###Updated conditions on R2
 ```
 jcluser@R2> show ospf database router detail advertising-router 10.1.1.1    
 
@@ -117,7 +117,7 @@ jcluser@R2>
 
 ```
 
-#### Put draffic back onto R1
+### Put draffic back onto R1
 
 ```
 configure exclusive
@@ -125,7 +125,7 @@ del apply-group maint
 commit and-quit
 ```
 
-####Normalized conditions on R2
+###Normalized conditions on R2
 ```
 jcluser@R2> show ospf database router detail advertising-router 10.1.1.1    
 
@@ -160,8 +160,8 @@ jcluser@R2>
 
 ```
 
-### Relevent Device configurations
-####R1
+## Relevent Device configurations
+###R1
 ```
 configure exclusive
 set groups maint protocols ospf overload
@@ -186,7 +186,7 @@ set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
 ```
 
-####R2
+###R2
 ```
 configure exclusive
 set interface lo0 unit 0 family inet address 10.2.1.1/24
@@ -200,14 +200,14 @@ set protocols ospf area 0.0.0.0 interface ge-0/0/0
 commit and-quit
 ```
 
-#### Verificaiton show comands
-#####R1
+### Verificaiton show comands
+####R1
 ```
 show configuration policy-options policy-statement send-loopbacks | display inheritance 
 show configuration policy-options protocols ospf | display inheritance 
 show ospf database router detail advertising-router self
 ```
-#####R2
+####R2
 ```
 show route receive-protocol bgp 172.16.1.1
 show ospf database router detail advertising-router 10.1.1.1
