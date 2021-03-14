@@ -20,8 +20,8 @@ Junos: 18.3R1.9
 
 ## Expectations
 In the NORMAL or non-DRAINED state, we expect the following:
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
-R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
+- R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 1.
+- R2 will see 10.1.1.1/24 and 10.1.99.24 in the bgp table with an AS path of 11.
 
 In the DRAINED state, we expect the following:
 R2 will see 10.1.1.1/24 and 10.1.99.24 in the ospf database with a metric of 65535.
