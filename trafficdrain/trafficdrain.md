@@ -41,7 +41,7 @@ Finally, back in the NORMAL or non-DRAINED state, we expect the following:
 ## Design
 This design address ospf and bgp in different ways.
 First, the design uses apply-groups to insert `overload` into the ospf configuration.
-Next, the design uses apply-groups to insert an as-path-prepend configration into all terms of the bgp export policy.
+Next, the design uses the apply-groups wildcard feature to insert an as-path-prepend configration into all terms of the bgp export policy. In this example we add four occurances of R1's AS 11.
 
 ### Group configuration
 ```
