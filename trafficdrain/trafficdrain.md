@@ -53,7 +53,7 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 Router   10.1.1.1         10.1.1.1         0x80000005   325  0x22 0x7fdf  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 1
+    Topology count: 0, Default metric: 1           <--- Metric is 1
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
     Topology count: 0, Default metric: 0
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
@@ -70,8 +70,8 @@ jcluser@R2> show route receive-protocol bgp 172.16.1.1
 
 inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
   Prefix  Nexthop       MED     Lclpref    AS path
-  10.1.1.0/24             172.16.1.1                              11 I
-  10.1.99.0/24            172.16.1.1                              11 I
+  10.1.1.0/24             172.16.1.1       11 I   <--- One entry in AS Path 
+  10.1.99.0/24            172.16.1.1       11 I
 
 inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 
@@ -94,7 +94,7 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 Router   10.1.1.1         10.1.1.1         0x80000006     5  0x22 0x6bf3  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 65535
+    Topology count: 0, Default metric: 65535       <--- Max Metric 
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
     Topology count: 0, Default metric: 0
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
@@ -111,8 +111,8 @@ jcluser@R2> show route receive-protocol bgp 172.16.1.1
 
 inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
   Prefix  Nexthop       MED     Lclpref    AS path
-  10.1.1.0/24             172.16.1.1                              11 11 11 11 11 I
-  10.1.99.0/24            172.16.1.1                              11 11 11 11 11 I
+  10.1.1.0/24             172.16.1.1       11 11 11 11 11 I  <--- Five Entries
+  10.1.99.0/24            172.16.1.1       11 11 11 11 11 I
 
 inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 
@@ -137,7 +137,7 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 Router   10.1.1.1         10.1.1.1         0x80000007    12  0x22 0x7be1  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 1
+    Topology count: 0, Default metric: 1           <--- Metric is back to 1
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
     Topology count: 0, Default metric: 0
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
@@ -154,13 +154,8 @@ jcluser@R2> show route receive-protocol bgp 172.16.1.1
 
 inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
   Prefix  Nexthop       MED     Lclpref    AS path
-  10.1.1.0/24             172.16.1.1                              11 I
-  10.1.99.0/24            172.16.1.1                              11 I
-
-inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
-
-jcluser@R2> 
-
+  10.1.1.0/24             172.16.1.1       11 I     <--- One entry in AS Path
+  10.1.99.0/24            172.16.1.1       11 I
 ```
 
 ## Relevent Device configurations
@@ -182,7 +177,6 @@ set protocols bgp export send-loopbacks
 set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 22
 set protocols bgp group external-peers neighbor 172.16.1.2
-set protocols bgp group external-peers neighbor 172.16.2.2
 set routing-options autonomous-system 11
 set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
@@ -197,7 +191,6 @@ set interface lo0 unit 0 family inet address 10.2.99.1/24
 set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 11
 set protocols bgp group external-peers neighbor 172.16.1.1
-set protocols bgp group external-peers neighbor 172.16.2.1
 set routing-options autonomous-system 22
 set protocols ospf area 0.0.0.0 interface ge-0/0/0
 commit and-quit
