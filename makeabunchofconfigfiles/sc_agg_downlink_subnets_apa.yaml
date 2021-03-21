@@ -1,0 +1,1597 @@
+
+- random:
+    scope: PROD-APA
+    address: 10.4.16.142/31
+    description: apa60-60-ws-sc-agg-r101 ae103 <> apa60-60-ws-sc-acc-r103 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.144/31
+    description: apa60-60-ws-sc-agg-r102 ae103 <> apa60-60-ws-sc-acc-r103 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.146/31
+    description: apa60-60-ws-sc-agg-r101 ae104 <> apa60-60-ws-sc-acc-r104 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.148/31
+    description: apa60-60-ws-sc-agg-r102 ae104 <> apa60-60-ws-sc-acc-r104 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.150/31
+    description: apa60-60-ws-sc-agg-r101 ae105 <> apa60-60-ws-sc-acc-r105 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.152/31
+    description: apa60-60-ws-sc-agg-r102 ae105 <> apa60-60-ws-sc-acc-r105 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.154/31
+    description: apa60-60-ws-sc-agg-r101 ae106 <> apa60-60-ws-sc-acc-r106 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.156/31
+    description: apa60-60-ws-sc-agg-r102 ae106 <> apa60-60-ws-sc-acc-r106 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.158/31
+    description: apa60-60-ws-sc-agg-r101 ae107 <> apa60-60-ws-sc-acc-r107 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.160/31
+    description: apa60-60-ws-sc-agg-r102 ae107 <> apa60-60-ws-sc-acc-r107 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.162/31
+    description: apa60-60-ws-sc-agg-r101 ae108 <> apa60-60-ws-sc-acc-r108 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.164/31
+    description: apa60-60-ws-sc-agg-r102 ae108 <> apa60-60-ws-sc-acc-r108 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.166/31
+    description: apa60-60-ws-sc-agg-r101 ae109 <> apa60-60-ws-sc-acc-r109 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.168/31
+    description: apa60-60-ws-sc-agg-r102 ae109 <> apa60-60-ws-sc-acc-r109 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.170/31
+    description: apa60-60-ws-sc-agg-r101 ae110 <> apa60-60-ws-sc-acc-r110 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.172/31
+    description: apa60-60-ws-sc-agg-r102 ae110 <> apa60-60-ws-sc-acc-r110 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.174/31
+    description: apa60-60-ws-sc-agg-r101 ae111 <> apa60-60-ws-sc-acc-r111 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.176/31
+    description: apa60-60-ws-sc-agg-r102 ae111 <> apa60-60-ws-sc-acc-r111 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.178/31
+    description: apa60-60-ws-sc-agg-r101 ae112 <> apa60-60-ws-sc-acc-r112 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.180/31
+    description: apa60-60-ws-sc-agg-r102 ae112 <> apa60-60-ws-sc-acc-r112 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.182/31
+    description: apa60-60-ws-sc-agg-r101 ae113 <> apa60-60-ws-sc-acc-r113 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.184/31
+    description: apa60-60-ws-sc-agg-r102 ae113 <> apa60-60-ws-sc-acc-r113 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.186/31
+    description: apa60-60-ws-sc-agg-r101 ae114 <> apa60-60-ws-sc-acc-r114 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.188/31
+    description: apa60-60-ws-sc-agg-r102 ae114 <> apa60-60-ws-sc-acc-r114 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.190/31
+    description: apa60-60-ws-sc-agg-r101 ae115 <> apa60-60-ws-sc-acc-r115 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.192/31
+    description: apa60-60-ws-sc-agg-r102 ae115 <> apa60-60-ws-sc-acc-r115 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.194/31
+    description: apa60-60-ws-sc-agg-r101 ae116 <> apa60-60-ws-sc-acc-r116 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.196/31
+    description: apa60-60-ws-sc-agg-r102 ae116 <> apa60-60-ws-sc-acc-r116 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.198/31
+    description: apa60-60-ws-sc-agg-r101 ae117 <> apa60-60-ws-sc-acc-r117 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.200/31
+    description: apa60-60-ws-sc-agg-r102 ae117 <> apa60-60-ws-sc-acc-r117 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.202/31
+    description: apa60-60-ws-sc-agg-r101 ae118 <> apa60-60-ws-sc-acc-r118 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.204/31
+    description: apa60-60-ws-sc-agg-r102 ae118 <> apa60-60-ws-sc-acc-r118 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.206/31
+    description: apa60-60-ws-sc-agg-r101 ae119 <> apa60-60-ws-sc-acc-r119 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.208/31
+    description: apa60-60-ws-sc-agg-r102 ae119 <> apa60-60-ws-sc-acc-r119 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.210/31
+    description: apa60-60-ws-sc-agg-r101 ae120 <> apa60-60-ws-sc-acc-r120 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.212/31
+    description: apa60-60-ws-sc-agg-r102 ae120 <> apa60-60-ws-sc-acc-r120 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.214/31
+    description: apa60-60-ws-sc-agg-r101 ae121 <> apa60-60-ws-sc-acc-r121 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.216/31
+    description: apa60-60-ws-sc-agg-r102 ae121 <> apa60-60-ws-sc-acc-r121 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.218/31
+    description: apa60-60-ws-sc-agg-r101 ae122 <> apa60-60-ws-sc-acc-r122 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.220/31
+    description: apa60-60-ws-sc-agg-r102 ae122 <> apa60-60-ws-sc-acc-r122 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.222/31
+    description: apa60-60-ws-sc-agg-r101 ae123 <> apa60-60-ws-sc-acc-r123 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.224/31
+    description: apa60-60-ws-sc-agg-r102 ae123 <> apa60-60-ws-sc-acc-r123 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.226/31
+    description: apa60-60-ws-sc-agg-r101 ae124 <> apa60-60-ws-sc-acc-r124 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.228/31
+    description: apa60-60-ws-sc-agg-r102 ae124 <> apa60-60-ws-sc-acc-r124 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.230/31
+    description: apa60-60-ws-sc-agg-r101 ae125 <> apa60-60-ws-sc-acc-r125 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.232/31
+    description: apa60-60-ws-sc-agg-r102 ae125 <> apa60-60-ws-sc-acc-r125 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.234/31
+    description: apa60-60-ws-sc-agg-r101 ae126 <> apa60-60-ws-sc-acc-r126 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.236/31
+    description: apa60-60-ws-sc-agg-r102 ae126 <> apa60-60-ws-sc-acc-r126 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.238/31
+    description: apa60-60-ws-sc-agg-r101 ae127 <> apa60-60-ws-sc-acc-r127 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.240/31
+    description: apa60-60-ws-sc-agg-r102 ae127 <> apa60-60-ws-sc-acc-r127 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.242/31
+    description: apa60-60-ws-sc-agg-r101 ae128 <> apa60-60-ws-sc-acc-r128 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.244/31
+    description: apa60-60-ws-sc-agg-r102 ae128 <> apa60-60-ws-sc-acc-r128 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.246/31
+    description: apa60-60-ws-sc-agg-r101 ae129 <> apa60-60-ws-sc-acc-r129 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.248/31
+    description: apa60-60-ws-sc-agg-r102 ae129 <> apa60-60-ws-sc-acc-r129 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.250/31
+    description: apa60-60-ws-sc-agg-r101 ae130 <> apa60-60-ws-sc-acc-r130 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.252/31
+    description: apa60-60-ws-sc-agg-r102 ae130 <> apa60-60-ws-sc-acc-r130 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.16.254/31
+    description: apa60-60-ws-sc-agg-r101 ae131 <> apa60-60-ws-sc-acc-r131 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.0/31
+    description: apa60-60-ws-sc-agg-r102 ae131 <> apa60-60-ws-sc-acc-r131 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.2/31
+    description: apa60-60-ws-sc-agg-r101 ae132 <> apa60-60-ws-sc-acc-r132 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.4/31
+    description: apa60-60-ws-sc-agg-r102 ae132 <> apa60-60-ws-sc-acc-r132 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.6/31
+    description: apa60-60-ws-sc-agg-r101 ae133 <> apa60-60-ws-sc-acc-r133 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.8/31
+    description: apa60-60-ws-sc-agg-r102 ae133 <> apa60-60-ws-sc-acc-r133 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.10/31
+    description: apa60-60-ws-sc-agg-r101 ae134 <> apa60-60-ws-sc-acc-r134 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.12/31
+    description: apa60-60-ws-sc-agg-r102 ae134 <> apa60-60-ws-sc-acc-r134 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.14/31
+    description: apa60-60-ws-sc-agg-r101 ae135 <> apa60-60-ws-sc-acc-r135 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.16/31
+    description: apa60-60-ws-sc-agg-r102 ae135 <> apa60-60-ws-sc-acc-r135 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.18/31
+    description: apa60-60-ws-sc-agg-r101 ae136 <> apa60-60-ws-sc-acc-r136 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.20/31
+    description: apa60-60-ws-sc-agg-r102 ae136 <> apa60-60-ws-sc-acc-r136 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.22/31
+    description: apa60-60-ws-sc-agg-r101 ae137 <> apa60-60-ws-sc-acc-r137 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.24/31
+    description: apa60-60-ws-sc-agg-r102 ae137 <> apa60-60-ws-sc-acc-r137 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.26/31
+    description: apa60-60-ws-sc-agg-r101 ae138 <> apa60-60-ws-sc-acc-r138 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.28/31
+    description: apa60-60-ws-sc-agg-r102 ae138 <> apa60-60-ws-sc-acc-r138 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.30/31
+    description: apa60-60-ws-sc-agg-r101 ae139 <> apa60-60-ws-sc-acc-r139 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.32/31
+    description: apa60-60-ws-sc-agg-r102 ae139 <> apa60-60-ws-sc-acc-r139 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.34/31
+    description: apa60-60-ws-sc-agg-r101 ae140 <> apa60-60-ws-sc-acc-r140 ae1
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.17.36/31
+    description: apa60-60-ws-sc-agg-r102 ae140 <> apa60-60-ws-sc-acc-r140 ae2
+    location: APA60
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.142/31
+    description: apa61-61-ws-sc-agg-r101 ae103 <> apa61-61-ws-sc-acc-r103 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.144/31
+    description: apa61-61-ws-sc-agg-r102 ae103 <> apa61-61-ws-sc-acc-r103 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.146/31
+    description: apa61-61-ws-sc-agg-r101 ae104 <> apa61-61-ws-sc-acc-r104 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.148/31
+    description: apa61-61-ws-sc-agg-r102 ae104 <> apa61-61-ws-sc-acc-r104 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.150/31
+    description: apa61-61-ws-sc-agg-r101 ae105 <> apa61-61-ws-sc-acc-r105 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.152/31
+    description: apa61-61-ws-sc-agg-r102 ae105 <> apa61-61-ws-sc-acc-r105 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.154/31
+    description: apa61-61-ws-sc-agg-r101 ae106 <> apa61-61-ws-sc-acc-r106 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.156/31
+    description: apa61-61-ws-sc-agg-r102 ae106 <> apa61-61-ws-sc-acc-r106 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.158/31
+    description: apa61-61-ws-sc-agg-r101 ae107 <> apa61-61-ws-sc-acc-r107 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.160/31
+    description: apa61-61-ws-sc-agg-r102 ae107 <> apa61-61-ws-sc-acc-r107 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.162/31
+    description: apa61-61-ws-sc-agg-r101 ae108 <> apa61-61-ws-sc-acc-r108 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.164/31
+    description: apa61-61-ws-sc-agg-r102 ae108 <> apa61-61-ws-sc-acc-r108 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.166/31
+    description: apa61-61-ws-sc-agg-r101 ae109 <> apa61-61-ws-sc-acc-r109 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.168/31
+    description: apa61-61-ws-sc-agg-r102 ae109 <> apa61-61-ws-sc-acc-r109 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.170/31
+    description: apa61-61-ws-sc-agg-r101 ae110 <> apa61-61-ws-sc-acc-r110 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.172/31
+    description: apa61-61-ws-sc-agg-r102 ae110 <> apa61-61-ws-sc-acc-r110 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.174/31
+    description: apa61-61-ws-sc-agg-r101 ae111 <> apa61-61-ws-sc-acc-r111 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.176/31
+    description: apa61-61-ws-sc-agg-r102 ae111 <> apa61-61-ws-sc-acc-r111 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.178/31
+    description: apa61-61-ws-sc-agg-r101 ae112 <> apa61-61-ws-sc-acc-r112 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.180/31
+    description: apa61-61-ws-sc-agg-r102 ae112 <> apa61-61-ws-sc-acc-r112 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.182/31
+    description: apa61-61-ws-sc-agg-r101 ae113 <> apa61-61-ws-sc-acc-r113 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.184/31
+    description: apa61-61-ws-sc-agg-r102 ae113 <> apa61-61-ws-sc-acc-r113 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.186/31
+    description: apa61-61-ws-sc-agg-r101 ae114 <> apa61-61-ws-sc-acc-r114 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.188/31
+    description: apa61-61-ws-sc-agg-r102 ae114 <> apa61-61-ws-sc-acc-r114 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.190/31
+    description: apa61-61-ws-sc-agg-r101 ae115 <> apa61-61-ws-sc-acc-r115 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.192/31
+    description: apa61-61-ws-sc-agg-r102 ae115 <> apa61-61-ws-sc-acc-r115 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.194/31
+    description: apa61-61-ws-sc-agg-r101 ae116 <> apa61-61-ws-sc-acc-r116 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.196/31
+    description: apa61-61-ws-sc-agg-r102 ae116 <> apa61-61-ws-sc-acc-r116 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.198/31
+    description: apa61-61-ws-sc-agg-r101 ae117 <> apa61-61-ws-sc-acc-r117 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.200/31
+    description: apa61-61-ws-sc-agg-r102 ae117 <> apa61-61-ws-sc-acc-r117 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.202/31
+    description: apa61-61-ws-sc-agg-r101 ae118 <> apa61-61-ws-sc-acc-r118 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.204/31
+    description: apa61-61-ws-sc-agg-r102 ae118 <> apa61-61-ws-sc-acc-r118 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.206/31
+    description: apa61-61-ws-sc-agg-r101 ae119 <> apa61-61-ws-sc-acc-r119 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.208/31
+    description: apa61-61-ws-sc-agg-r102 ae119 <> apa61-61-ws-sc-acc-r119 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.210/31
+    description: apa61-61-ws-sc-agg-r101 ae120 <> apa61-61-ws-sc-acc-r120 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.212/31
+    description: apa61-61-ws-sc-agg-r102 ae120 <> apa61-61-ws-sc-acc-r120 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.214/31
+    description: apa61-61-ws-sc-agg-r101 ae121 <> apa61-61-ws-sc-acc-r121 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.216/31
+    description: apa61-61-ws-sc-agg-r102 ae121 <> apa61-61-ws-sc-acc-r121 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.218/31
+    description: apa61-61-ws-sc-agg-r101 ae122 <> apa61-61-ws-sc-acc-r122 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.220/31
+    description: apa61-61-ws-sc-agg-r102 ae122 <> apa61-61-ws-sc-acc-r122 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.222/31
+    description: apa61-61-ws-sc-agg-r101 ae123 <> apa61-61-ws-sc-acc-r123 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.224/31
+    description: apa61-61-ws-sc-agg-r102 ae123 <> apa61-61-ws-sc-acc-r123 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.226/31
+    description: apa61-61-ws-sc-agg-r101 ae124 <> apa61-61-ws-sc-acc-r124 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.228/31
+    description: apa61-61-ws-sc-agg-r102 ae124 <> apa61-61-ws-sc-acc-r124 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.230/31
+    description: apa61-61-ws-sc-agg-r101 ae125 <> apa61-61-ws-sc-acc-r125 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.232/31
+    description: apa61-61-ws-sc-agg-r102 ae125 <> apa61-61-ws-sc-acc-r125 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.234/31
+    description: apa61-61-ws-sc-agg-r101 ae126 <> apa61-61-ws-sc-acc-r126 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.236/31
+    description: apa61-61-ws-sc-agg-r102 ae126 <> apa61-61-ws-sc-acc-r126 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.238/31
+    description: apa61-61-ws-sc-agg-r101 ae127 <> apa61-61-ws-sc-acc-r127 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.240/31
+    description: apa61-61-ws-sc-agg-r102 ae127 <> apa61-61-ws-sc-acc-r127 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.242/31
+    description: apa61-61-ws-sc-agg-r101 ae128 <> apa61-61-ws-sc-acc-r128 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.244/31
+    description: apa61-61-ws-sc-agg-r102 ae128 <> apa61-61-ws-sc-acc-r128 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.246/31
+    description: apa61-61-ws-sc-agg-r101 ae129 <> apa61-61-ws-sc-acc-r129 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.248/31
+    description: apa61-61-ws-sc-agg-r102 ae129 <> apa61-61-ws-sc-acc-r129 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.250/31
+    description: apa61-61-ws-sc-agg-r101 ae130 <> apa61-61-ws-sc-acc-r130 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.252/31
+    description: apa61-61-ws-sc-agg-r102 ae130 <> apa61-61-ws-sc-acc-r130 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.32.254/31
+    description: apa61-61-ws-sc-agg-r101 ae131 <> apa61-61-ws-sc-acc-r131 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.0/31
+    description: apa61-61-ws-sc-agg-r102 ae131 <> apa61-61-ws-sc-acc-r131 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.2/31
+    description: apa61-61-ws-sc-agg-r101 ae132 <> apa61-61-ws-sc-acc-r132 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.4/31
+    description: apa61-61-ws-sc-agg-r102 ae132 <> apa61-61-ws-sc-acc-r132 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.6/31
+    description: apa61-61-ws-sc-agg-r101 ae133 <> apa61-61-ws-sc-acc-r133 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.8/31
+    description: apa61-61-ws-sc-agg-r102 ae133 <> apa61-61-ws-sc-acc-r133 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.10/31
+    description: apa61-61-ws-sc-agg-r101 ae134 <> apa61-61-ws-sc-acc-r134 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.12/31
+    description: apa61-61-ws-sc-agg-r102 ae134 <> apa61-61-ws-sc-acc-r134 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.14/31
+    description: apa61-61-ws-sc-agg-r101 ae135 <> apa61-61-ws-sc-acc-r135 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.16/31
+    description: apa61-61-ws-sc-agg-r102 ae135 <> apa61-61-ws-sc-acc-r135 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.18/31
+    description: apa61-61-ws-sc-agg-r101 ae136 <> apa61-61-ws-sc-acc-r136 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.20/31
+    description: apa61-61-ws-sc-agg-r102 ae136 <> apa61-61-ws-sc-acc-r136 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.22/31
+    description: apa61-61-ws-sc-agg-r101 ae137 <> apa61-61-ws-sc-acc-r137 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.24/31
+    description: apa61-61-ws-sc-agg-r102 ae137 <> apa61-61-ws-sc-acc-r137 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.26/31
+    description: apa61-61-ws-sc-agg-r101 ae138 <> apa61-61-ws-sc-acc-r138 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.28/31
+    description: apa61-61-ws-sc-agg-r102 ae138 <> apa61-61-ws-sc-acc-r138 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.30/31
+    description: apa61-61-ws-sc-agg-r101 ae139 <> apa61-61-ws-sc-acc-r139 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.32/31
+    description: apa61-61-ws-sc-agg-r102 ae139 <> apa61-61-ws-sc-acc-r139 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.34/31
+    description: apa61-61-ws-sc-agg-r101 ae140 <> apa61-61-ws-sc-acc-r140 ae1
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.33.36/31
+    description: apa61-61-ws-sc-agg-r102 ae140 <> apa61-61-ws-sc-acc-r140 ae2
+    location: APA61
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.142/31
+    description: apa62-62-ws-sc-agg-r101 ae103 <> apa62-62-ws-sc-acc-r103 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.144/31
+    description: apa62-62-ws-sc-agg-r102 ae103 <> apa62-62-ws-sc-acc-r103 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.146/31
+    description: apa62-62-ws-sc-agg-r101 ae104 <> apa62-62-ws-sc-acc-r104 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.148/31
+    description: apa62-62-ws-sc-agg-r102 ae104 <> apa62-62-ws-sc-acc-r104 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.150/31
+    description: apa62-62-ws-sc-agg-r101 ae105 <> apa62-62-ws-sc-acc-r105 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.152/31
+    description: apa62-62-ws-sc-agg-r102 ae105 <> apa62-62-ws-sc-acc-r105 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.154/31
+    description: apa62-62-ws-sc-agg-r101 ae106 <> apa62-62-ws-sc-acc-r106 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.156/31
+    description: apa62-62-ws-sc-agg-r102 ae106 <> apa62-62-ws-sc-acc-r106 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.158/31
+    description: apa62-62-ws-sc-agg-r101 ae107 <> apa62-62-ws-sc-acc-r107 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.160/31
+    description: apa62-62-ws-sc-agg-r102 ae107 <> apa62-62-ws-sc-acc-r107 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.162/31
+    description: apa62-62-ws-sc-agg-r101 ae108 <> apa62-62-ws-sc-acc-r108 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.164/31
+    description: apa62-62-ws-sc-agg-r102 ae108 <> apa62-62-ws-sc-acc-r108 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.166/31
+    description: apa62-62-ws-sc-agg-r101 ae109 <> apa62-62-ws-sc-acc-r109 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.168/31
+    description: apa62-62-ws-sc-agg-r102 ae109 <> apa62-62-ws-sc-acc-r109 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.170/31
+    description: apa62-62-ws-sc-agg-r101 ae110 <> apa62-62-ws-sc-acc-r110 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.172/31
+    description: apa62-62-ws-sc-agg-r102 ae110 <> apa62-62-ws-sc-acc-r110 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.174/31
+    description: apa62-62-ws-sc-agg-r101 ae111 <> apa62-62-ws-sc-acc-r111 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.176/31
+    description: apa62-62-ws-sc-agg-r102 ae111 <> apa62-62-ws-sc-acc-r111 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.178/31
+    description: apa62-62-ws-sc-agg-r101 ae112 <> apa62-62-ws-sc-acc-r112 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.180/31
+    description: apa62-62-ws-sc-agg-r102 ae112 <> apa62-62-ws-sc-acc-r112 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.182/31
+    description: apa62-62-ws-sc-agg-r101 ae113 <> apa62-62-ws-sc-acc-r113 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.184/31
+    description: apa62-62-ws-sc-agg-r102 ae113 <> apa62-62-ws-sc-acc-r113 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.186/31
+    description: apa62-62-ws-sc-agg-r101 ae114 <> apa62-62-ws-sc-acc-r114 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.188/31
+    description: apa62-62-ws-sc-agg-r102 ae114 <> apa62-62-ws-sc-acc-r114 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.190/31
+    description: apa62-62-ws-sc-agg-r101 ae115 <> apa62-62-ws-sc-acc-r115 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.192/31
+    description: apa62-62-ws-sc-agg-r102 ae115 <> apa62-62-ws-sc-acc-r115 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.194/31
+    description: apa62-62-ws-sc-agg-r101 ae116 <> apa62-62-ws-sc-acc-r116 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.196/31
+    description: apa62-62-ws-sc-agg-r102 ae116 <> apa62-62-ws-sc-acc-r116 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.198/31
+    description: apa62-62-ws-sc-agg-r101 ae117 <> apa62-62-ws-sc-acc-r117 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.200/31
+    description: apa62-62-ws-sc-agg-r102 ae117 <> apa62-62-ws-sc-acc-r117 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.202/31
+    description: apa62-62-ws-sc-agg-r101 ae118 <> apa62-62-ws-sc-acc-r118 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.204/31
+    description: apa62-62-ws-sc-agg-r102 ae118 <> apa62-62-ws-sc-acc-r118 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.206/31
+    description: apa62-62-ws-sc-agg-r101 ae119 <> apa62-62-ws-sc-acc-r119 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.208/31
+    description: apa62-62-ws-sc-agg-r102 ae119 <> apa62-62-ws-sc-acc-r119 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.210/31
+    description: apa62-62-ws-sc-agg-r101 ae120 <> apa62-62-ws-sc-acc-r120 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.212/31
+    description: apa62-62-ws-sc-agg-r102 ae120 <> apa62-62-ws-sc-acc-r120 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.214/31
+    description: apa62-62-ws-sc-agg-r101 ae121 <> apa62-62-ws-sc-acc-r121 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.216/31
+    description: apa62-62-ws-sc-agg-r102 ae121 <> apa62-62-ws-sc-acc-r121 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.218/31
+    description: apa62-62-ws-sc-agg-r101 ae122 <> apa62-62-ws-sc-acc-r122 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.220/31
+    description: apa62-62-ws-sc-agg-r102 ae122 <> apa62-62-ws-sc-acc-r122 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.222/31
+    description: apa62-62-ws-sc-agg-r101 ae123 <> apa62-62-ws-sc-acc-r123 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.224/31
+    description: apa62-62-ws-sc-agg-r102 ae123 <> apa62-62-ws-sc-acc-r123 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.226/31
+    description: apa62-62-ws-sc-agg-r101 ae124 <> apa62-62-ws-sc-acc-r124 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.228/31
+    description: apa62-62-ws-sc-agg-r102 ae124 <> apa62-62-ws-sc-acc-r124 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.230/31
+    description: apa62-62-ws-sc-agg-r101 ae125 <> apa62-62-ws-sc-acc-r125 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.232/31
+    description: apa62-62-ws-sc-agg-r102 ae125 <> apa62-62-ws-sc-acc-r125 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.234/31
+    description: apa62-62-ws-sc-agg-r101 ae126 <> apa62-62-ws-sc-acc-r126 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.236/31
+    description: apa62-62-ws-sc-agg-r102 ae126 <> apa62-62-ws-sc-acc-r126 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.238/31
+    description: apa62-62-ws-sc-agg-r101 ae127 <> apa62-62-ws-sc-acc-r127 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.240/31
+    description: apa62-62-ws-sc-agg-r102 ae127 <> apa62-62-ws-sc-acc-r127 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.242/31
+    description: apa62-62-ws-sc-agg-r101 ae128 <> apa62-62-ws-sc-acc-r128 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.244/31
+    description: apa62-62-ws-sc-agg-r102 ae128 <> apa62-62-ws-sc-acc-r128 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.246/31
+    description: apa62-62-ws-sc-agg-r101 ae129 <> apa62-62-ws-sc-acc-r129 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.248/31
+    description: apa62-62-ws-sc-agg-r102 ae129 <> apa62-62-ws-sc-acc-r129 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.250/31
+    description: apa62-62-ws-sc-agg-r101 ae130 <> apa62-62-ws-sc-acc-r130 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.252/31
+    description: apa62-62-ws-sc-agg-r102 ae130 <> apa62-62-ws-sc-acc-r130 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.48.254/31
+    description: apa62-62-ws-sc-agg-r101 ae131 <> apa62-62-ws-sc-acc-r131 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.0/31
+    description: apa62-62-ws-sc-agg-r102 ae131 <> apa62-62-ws-sc-acc-r131 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.2/31
+    description: apa62-62-ws-sc-agg-r101 ae132 <> apa62-62-ws-sc-acc-r132 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.4/31
+    description: apa62-62-ws-sc-agg-r102 ae132 <> apa62-62-ws-sc-acc-r132 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.6/31
+    description: apa62-62-ws-sc-agg-r101 ae133 <> apa62-62-ws-sc-acc-r133 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.8/31
+    description: apa62-62-ws-sc-agg-r102 ae133 <> apa62-62-ws-sc-acc-r133 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.10/31
+    description: apa62-62-ws-sc-agg-r101 ae134 <> apa62-62-ws-sc-acc-r134 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.12/31
+    description: apa62-62-ws-sc-agg-r102 ae134 <> apa62-62-ws-sc-acc-r134 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.14/31
+    description: apa62-62-ws-sc-agg-r101 ae135 <> apa62-62-ws-sc-acc-r135 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.16/31
+    description: apa62-62-ws-sc-agg-r102 ae135 <> apa62-62-ws-sc-acc-r135 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.18/31
+    description: apa62-62-ws-sc-agg-r101 ae136 <> apa62-62-ws-sc-acc-r136 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.20/31
+    description: apa62-62-ws-sc-agg-r102 ae136 <> apa62-62-ws-sc-acc-r136 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.22/31
+    description: apa62-62-ws-sc-agg-r101 ae137 <> apa62-62-ws-sc-acc-r137 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.24/31
+    description: apa62-62-ws-sc-agg-r102 ae137 <> apa62-62-ws-sc-acc-r137 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.26/31
+    description: apa62-62-ws-sc-agg-r101 ae138 <> apa62-62-ws-sc-acc-r138 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.28/31
+    description: apa62-62-ws-sc-agg-r102 ae138 <> apa62-62-ws-sc-acc-r138 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.30/31
+    description: apa62-62-ws-sc-agg-r101 ae139 <> apa62-62-ws-sc-acc-r139 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.32/31
+    description: apa62-62-ws-sc-agg-r102 ae139 <> apa62-62-ws-sc-acc-r139 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.34/31
+    description: apa62-62-ws-sc-agg-r101 ae140 <> apa62-62-ws-sc-acc-r140 ae1
+    location: APA62
+    role: vlan
+    state: Allocated
+- random:
+    scope: PROD-APA
+    address: 10.4.49.36/31
+    description: apa62-62-ws-sc-agg-r102 ae140 <> apa62-62-ws-sc-acc-r140 ae2
+    location: APA62
+    role: vlan
+    state: Allocated
