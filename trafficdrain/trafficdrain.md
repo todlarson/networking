@@ -145,7 +145,61 @@ inet.0: 17 destinations, 19 routes (16 active, 0 holddown, 1 hidden)
 
 inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 ```
-
+### Show the configuration inheritance
+```
+jcluser@R1> show configuration protocols ospf | display inheritance 
+overload timeout 60;
+area 0.0.0.0 {
+    interface ge-0/0/0.0 {
+        ##
+        ## '65353' was inherited from group 'maint'
+        ##
+        metric 65353;
+    }
+    interface lo0.0 {
+        ##
+        ## '65353' was inherited from group 'maint'
+        ##
+        metric 65353;
+    }
+}
+jcluser@R1> show configuration policy-options | display inheritance
+policy-statement send-loopbacks {
+    term 1 {
+        from {
+            route-filter 10.1.1.0/24 exact;
+        }
+        then {
+            ##
+            ## '666 666 666 666' was inherited from group 'maint'
+            ##
+            as-path-prepend "666 666 666 666";
+            accept;
+        }
+    }
+    term 2 {
+        from {
+            route-filter 10.1.99.0/24 exact;
+        }
+        then {
+            ##
+            ## '666 666 666 666' was inherited from group 'maint'
+            ##
+            as-path-prepend "666 666 666 666";
+            accept;
+        }
+    }
+    term 1000 {
+        then {
+            ##
+            ## '666 666 666 666' was inherited from group 'maint'
+            ##
+            as-path-prepend "666 666 666 666";
+            reject;
+        }
+    }
+}
+```
 ### Put draffic back onto R1
 
 ```
@@ -202,7 +256,7 @@ set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 22
 set protocols bgp group external-peers neighbor 172.16.1.2
 set routing-options autonomous-system 11
-set protocols ospf overload timeout 30
+set protocols ospf overload timeout 60
 set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
