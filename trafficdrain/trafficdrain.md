@@ -48,7 +48,7 @@ jcluser@R1> show configuration groups
 maint {
     protocols {
         ospf {
-            area 0.0.0.0 {
+            area <*> {
                 interface <*> {
                     metric 65353;
                 }
@@ -242,7 +242,7 @@ inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
 ### R1
 ```
 configure exclusive
-set groups maint protocols ospf area 0.0.0.0 interface <*> metric 65353
+set groups maint protocols ospf area <*> interface <*> metric 65353
 set groups maint policy-options policy-statement <*> term <*> then as-path-prepend "666 666 666 666"
 set interfaces lo0 unit 0 family inet address 10.1.1.1/24
 set interfaces lo0 unit 0 family inet address 10.1.99.1/24
