@@ -72,7 +72,7 @@ For example:
 ```
 set protocols ospf overload timeout 60
 ```
-I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group. So, using wildcards in the apply-group to set the metric on all interfaces seems to work nicely.
+I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group. So, using wildcards in the apply-group to set the metric on all interfaces seem to work nicely.
 ## Demo
 ### Normal conditions on R2
 ```
