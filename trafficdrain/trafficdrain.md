@@ -193,7 +193,6 @@ set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 22
 set protocols bgp group external-peers neighbor 172.16.1.2
 set routing-options autonomous-system 11
-set protocols ospf overload timeout 300
 set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
@@ -224,3 +223,11 @@ show ospf database router detail advertising-router self
 show route receive-protocol bgp 172.16.1.1
 show ospf database router detail advertising-router 10.1.1.1
 ```
+
+### Problem
+The above works great but our standard ospf config includes a timeout in the overload statement. 
+The timeout is to ensures that after a reboot ospf comes up and is stable before putting traffic on it. 
+```
+set protocols ospf overload timeout 300
+```
+So far I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group.
