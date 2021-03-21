@@ -56,7 +56,7 @@ maint {
         }
     }
     policy-options {
-        policy-statement send-loopbacks {
+        policy-statement <*> {
             term <*> {
                 then as-path-prepend "666 666 666 666";
             }
