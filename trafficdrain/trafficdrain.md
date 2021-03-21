@@ -243,7 +243,7 @@ inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
 ```
 configure exclusive
 set groups maint protocols ospf area 0.0.0.0 interface <*> metric 65353
-set groups maint policy-options policy-statement send-loopbacks term <*> then as-path-prepend "666 666 666 666"
+set groups maint policy-options policy-statement <*> term <*> then as-path-prepend "666 666 666 666"
 set interfaces lo0 unit 0 family inet address 10.1.1.1/24
 set interfaces lo0 unit 0 family inet address 10.1.99.1/24
 set policy-options policy-statement send-loopbacks term 1 from route-filter 10.1.1.0/24 exact
@@ -261,7 +261,6 @@ set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
 ```
-
 ### R2
 ```
 configure exclusive
@@ -274,7 +273,6 @@ set routing-options autonomous-system 22
 set protocols ospf area 0.0.0.0 interface ge-0/0/0
 commit and-quit
 ```
-
 ### Verification show comands
 #### R1
 ```
@@ -287,4 +285,3 @@ show ospf database router detail advertising-router self
 show route receive-protocol bgp 172.16.1.1
 show ospf database router detail advertising-router 10.1.1.1
 ```
-
