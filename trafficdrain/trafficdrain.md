@@ -32,37 +32,46 @@ In the NORMAL or non-DRAINED state, we expect the following:
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
 
 In the DRAINED state, we expect the following:
-- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 65535.
-- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of "11 11 11 11 11".
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 65353.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of "666 666 666 666 11".
 
 Finally, back in the NORMAL or non-DRAINED state, we expect the following:
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 1.
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
 ## Design
 This design address ospf and bgp in different ways.
-First, the design uses apply-groups to insert `overload` into the ospf configuration.
+First, the design uses a wildcard in the apply-groups to set the ospf metric on all interfaces to 65353.
 Next, the design uses the apply-groups wildcard feature to insert an as-path-prepend configration into all terms of the bgp export policy. In this example we add four occurances of R1's AS 11.
-
 ### Group configuration
 ```
 jcluser@R1> show configuration groups 
 maint {
     protocols {
         ospf {
-            overload;
+            area 0.0.0.0 {
+                interface <*> {
+                    metric 65353;
+                }
+            }
         }
     }
     policy-options {
         policy-statement send-loopbacks {
             term <*> {
-                then as-path-prepend "11 11 11 11";
+                then as-path-prepend "666 666 666 666";
             }
         }
     }
 }
 ```
-
+### Other design options considered
 A downside of this design is it depends on the export policy to be configured with terms. Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
+
+Ordinarity I'd recomment using `ospf overload` to configure the router to easily apply the max metric ospf. However, sometimes a team will use the `overload timeout` features to ensure2 that after a reboot ospf comes up and is stable before putting traffic on it. 
+```
+set protocols ospf overload timeout 300
+```
+I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group. So, using wildcards in the apply-group seems to work nicely.
 ## Demo
 ### Normal conditions on R2
 ```
@@ -225,9 +234,3 @@ show route receive-protocol bgp 172.16.1.1
 show ospf database router detail advertising-router 10.1.1.1
 ```
 
-### Note about ospf overaload
-Ordinarity I'd recomment using `ospf overload` to configure the router to easily apply the max metric ospf. However, sometimes a team will use the `overload timeout` features to ensure2 that after a reboot ospf comes up and is stable before putting traffic on it. 
-```
-set protocols ospf overload timeout 300
-```
-I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group. So, using wildcards in the apply-group seems to work nicely.
