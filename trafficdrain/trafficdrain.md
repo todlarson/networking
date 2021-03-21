@@ -67,7 +67,8 @@ maint {
 ### Other design options considered
 A downside of this design is it depends on the export policy to be configured with terms. Term in the policy are a good practice to help with readability and maintainablity so this seems like and acceptable limitation.
 
-Ordinarity I'd recomment using `ospf overload` to configure the router to easily apply the max metric ospf. However, sometimes a team will use the `overload timeout` features to ensure2 that after a reboot ospf comes up and is stable before putting traffic on it. 
+Ordinarity I'd recomment using `ospf overload` to configure the router to easily apply the max metric ospf. However, sometimes a team will use the `overload timeout` features to ensure that after a reboot ospf comes up and is stable before putting traffic on it. 
+####For example:
 ```
 set protocols ospf overload timeout 300
 ```
