@@ -32,7 +32,7 @@ In the NORMAL or non-DRAINED state, we expect the following:
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
 
 In the DRAINED state, we expect the following:
-- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 65353.
+- R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the ospf database with a metric of 65535.
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of "666 666 666 666 11".
 
 Finally, back in the NORMAL or non-DRAINED state, we expect the following:
@@ -40,7 +40,7 @@ Finally, back in the NORMAL or non-DRAINED state, we expect the following:
 - R2 will see 10.1.1.1/24 and 10.1.99.1/24 in the bgp table with an AS path of 11.
 ## Design
 This design address ospf and bgp in different ways.
-First, the design uses a wildcard in the apply-groups to set the ospf metric on all interfaces to 65353.
+First, the design uses a wildcard in the apply-groups to set the ospf metric on all interfaces to 65535.
 Next, the design uses the apply-groups wildcard feature to insert an as-path-prepend configration into all terms of the bgp export policy. In this example we add four occurances of R1's AS 11.
 ### Group configuration
 ```
@@ -50,7 +50,7 @@ maint {
         ospf {
             area <*> {
                 interface <*> {
-                    metric 65353;
+                    metric 65535;
                 }
             }
         }
@@ -124,18 +124,18 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 Router   10.1.1.1         10.1.1.1         0x8000000b    40  0x22 0x7f6c  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 65353     <--- Increased Metric on all interfaces
+    Topology count: 0, Default metric: 65535     <--- Increased Metric on all interfaces
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
-    Topology count: 0, Default metric: 65353
+    Topology count: 0, Default metric: 65535
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
-    Topology count: 0, Default metric: 65353
+    Topology count: 0, Default metric: 65535
   id 10.1.99.1, data 255.255.255.255, Type Stub (3)
-    Topology count: 0, Default metric: 65353
+    Topology count: 0, Default metric: 65535
   id 10.1.99.0, data 255.255.255.0, Type Stub (3)
-    Topology count: 0, Default metric: 65353
+    Topology count: 0, Default metric: 65535
   Topology default (ID 0)
     Type: Transit, Node ID: 172.16.1.2
-      Metric: 65353, Bidirectional
+      Metric: 65535, Bidirectional
 
 jcluser@R2> show route receive-protocol bgp 172.16.1.1    
 
@@ -153,15 +153,15 @@ overload timeout 60;
 area 0.0.0.0 {
     interface ge-0/0/0.0 {
         ##
-        ## '65353' was inherited from group 'maint'
+        ## '65535' was inherited from group 'maint'
         ##
-        metric 65353;
+        metric 65535;
     }
     interface lo0.0 {
         ##
-        ## '65353' was inherited from group 'maint'
+        ## '65535' was inherited from group 'maint'
         ##
-        metric 65353;
+        metric 65535;
     }
 }
 jcluser@R1> show configuration policy-options | display inheritance
@@ -243,7 +243,7 @@ inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
 ### R1
 ```
 configure exclusive
-set groups maint protocols ospf area <*> interface <*> metric 65353
+set groups maint protocols ospf area <*> interface <*> metric 65535
 set groups maint policy-options policy-statement <*> term <*> then as-path-prepend "666 666 666 666"
 set interfaces lo0 unit 0 family inet address 10.1.1.1/24
 set interfaces lo0 unit 0 family inet address 10.1.99.1/24
