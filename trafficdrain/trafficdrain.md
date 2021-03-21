@@ -70,10 +70,10 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 
     OSPF database, Area 0.0.0.0
  Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
-Router   10.1.1.1         10.1.1.1         0x80000005   325  0x22 0x7fdf  84
+Router   10.1.1.1         10.1.1.1         0x80000007    14  0x22 0x7be1  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 1           <--- Metric is 1
+    Topology count: 0, Default metric: 1       <--- Metric is 1
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
     Topology count: 0, Default metric: 0
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
@@ -111,28 +111,30 @@ jcluser@R2> show ospf database router detail advertising-router 10.1.1.1
 
     OSPF database, Area 0.0.0.0
  Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
-Router   10.1.1.1         10.1.1.1         0x80000006     5  0x22 0x6bf3  84
+Router   10.1.1.1         10.1.1.1         0x8000000b    40  0x22 0x7f6c  84
   bits 0x0, link count 5
   id 172.16.1.2, data 172.16.1.1, Type Transit (2)
-    Topology count: 0, Default metric: 65535       <--- Max Metric 
+    Topology count: 0, Default metric: 65353     <--- Increased Metric on all interfaces
   id 10.1.1.1, data 255.255.255.255, Type Stub (3)
-    Topology count: 0, Default metric: 0
+    Topology count: 0, Default metric: 65353
   id 10.1.1.0, data 255.255.255.0, Type Stub (3)
-    Topology count: 0, Default metric: 0
+    Topology count: 0, Default metric: 65353
   id 10.1.99.1, data 255.255.255.255, Type Stub (3)
-    Topology count: 0, Default metric: 0
+    Topology count: 0, Default metric: 65353
   id 10.1.99.0, data 255.255.255.0, Type Stub (3)
-    Topology count: 0, Default metric: 0
+    Topology count: 0, Default metric: 65353
   Topology default (ID 0)
     Type: Transit, Node ID: 172.16.1.2
-      Metric: 65535, Bidirectional
+      Metric: 65353, Bidirectional
 
-jcluser@R2> show route receive-protocol bgp 172.16.1.1                      
+jcluser@R2> show route receive-protocol bgp 172.16.1.1    
 
-inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
+inet.0: 17 destinations, 19 routes (16 active, 0 holddown, 1 hidden)
   Prefix  Nexthop       MED     Lclpref    AS path
-  10.1.1.0/24             172.16.1.1       11 11 11 11 11 I  <--- Five Entries
-  10.1.99.0/24            172.16.1.1       11 11 11 11 11 I
+  10.1.1.0/24             172.16.1.1                              666 666 666 666 11 I
+  10.1.99.0/24            172.16.1.1                              666 666 666 666 11 I
+
+inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 ```
 
 ### Put draffic back onto R1
@@ -177,8 +179,8 @@ inet.0: 17 destinations, 21 routes (16 active, 0 holddown, 1 hidden)
 ### R1
 ```
 configure exclusive
-set groups maint protocols ospf interfaces ae-<*> metric 65353
-set groups maint policy-options policy-statement send-loopbacks term <*> then as-path-prepend "11 11 11 11"
+set groups maint protocols ospf area 0.0.0.0 interface <*> metric 65353
+set groups maint policy-options policy-statement send-loopbacks term <*> then as-path-prepend "666 666 666 666"
 set interfaces lo0 unit 0 family inet address 10.1.1.1/24
 set interfaces lo0 unit 0 family inet address 10.1.99.1/24
 set policy-options policy-statement send-loopbacks term 1 from route-filter 10.1.1.0/24 exact
@@ -186,13 +188,12 @@ set policy-options policy-statement send-loopbacks term 1 then accept
 set policy-options policy-statement send-loopbacks term 2 from route-filter 10.1.99.0/24 exact
 set policy-options policy-statement send-loopbacks term 2 then accept
 set policy-options policy-statement send-loopbacks term 1000 then reject
-set policy-options policy-statement myprepend then as-path-prepend "11 11 11 11" 
-set policy-options policy-statement myprepend then accept
 set protocols bgp export send-loopbacks
 set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 22
 set protocols bgp group external-peers neighbor 172.16.1.2
 set routing-options autonomous-system 11
+set protocols ospf overload timeout 30
 set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
@@ -224,10 +225,9 @@ show route receive-protocol bgp 172.16.1.1
 show ospf database router detail advertising-router 10.1.1.1
 ```
 
-### Problem
-The above works great but our standard ospf config includes a timeout in the overload statement. 
-The timeout is to ensures that after a reboot ospf comes up and is stable before putting traffic on it. 
+### Note about ospf overaload
+Ordinarity I'd recomment using `ospf overload` to configure the router to easily apply the max metric ospf. However, sometimes a team will use the `overload timeout` features to ensure2 that after a reboot ospf comes up and is stable before putting traffic on it. 
 ```
 set protocols ospf overload timeout 300
 ```
-So far I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group.
+I haven't figured out the syntax to clear out the `timeout 300` inside the maint apply-group. So, using wildcards in the apply-group seems to work nicely.
