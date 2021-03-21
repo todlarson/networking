@@ -221,7 +221,7 @@ set protocols ospf area 0.0.0.0 interface ge-0/0/0
 commit and-quit
 ```
 
-### Verificaiton show comands
+### Verification show comands
 #### R1
 ```
 show configuration policy-options policy-statement send-loopbacks | display inheritance 
