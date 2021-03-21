@@ -193,6 +193,7 @@ set protocols bgp group external-peers type external
 set protocols bgp group external-peers peer-as 22
 set protocols bgp group external-peers neighbor 172.16.1.2
 set routing-options autonomous-system 11
+set protocols ospf overload timeout 300
 set protocols ospf area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf area 0.0.0.0 interface lo0.0
 commit and-quit
@@ -215,7 +216,7 @@ commit and-quit
 #### R1
 ```
 show configuration policy-options policy-statement send-loopbacks | display inheritance 
-show configuration policy-options protocols ospf | display inheritance 
+show configuration protocols ospf | display inheritance 
 show ospf database router detail advertising-router self
 ```
 #### R2
